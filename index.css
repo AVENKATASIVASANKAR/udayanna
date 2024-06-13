@@ -9,8 +9,88 @@
 *,::after, ::before {
     box-sizing: border-box;
 }
+.ctg-box3 {
+    flex: 0 0 100%; /* Make ctg-box3 span the full width */
+    padding: 10px;
+    box-sizing: border-box;
+}
+.satisfied{
+    background-color:#6610f2;width:10vw;height: 30vh;color: white;
+}
+.ctg_box_2 {
+    background: rgba(79, 80, 233, .8);
+    right: -215px;
+    top: 50px;
+}
+.inner-card {
+    position: relative;
+    z-index: 1; /* Ensure cards are stacked */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition effect */
+}
 
+.inner-card:hover {
+    z-index: 2; /* Bring hovered card to the front */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow to highlight */
+    transform: scale(1.05); /* Scale up the card slightly */
+}
 
+.ctg_box_1 {
+    background: rgba(238, 158, 0, .8);
+    right: -60px;
+    top: 50px;
+}
+
+.ctg_bx1 {
+    position: absolute;
+    height: 200px;
+    width: 130px;
+    padding: 30px 20px;
+    font-size: 16px;
+    color: #fff;
+}
+.catagores_left_1 {
+    height: 300px;
+    width: 330px;
+    background: #cfe7eb;
+    position: relative;
+    margin-bottom: 30px;
+}
+.catagory_left_2{
+    background-color: #cfe7eb;height: 60vh;width: 30vw;
+}
+.catagory-img2{
+    height: fit-content;height:35vh;margin-top: auto;
+}
+.catagory-card2{
+    width:10vh;height:5vw;background-color: red;position:absolute;right:17%;bottom:20%;
+}
+.catagory-card3{
+    height: 25vh;width:15vw;position:absolute;right:-25%; background-color: #6610f2;color:white;
+}
+.customer-back-us{
+    background-color: #cfe7eb;height:40vh;width:25vw;
+    margin-left: 2%;
+}
+
+.customer-back-us-cal{
+    margin-left: 13%;
+}
+.tab1{
+    width:100%;
+}
+.tab-img1{
+    height: 100vh;width:100%;
+}
+.tab-img2{
+    width:100%;
+}
+.tab-img3{
+    width:100%;
+    
+}
+.tab-img4,.tab-img5{
+    width:100%;
+}
 body, p {
     font-family: 'Raleway', sans-serif;
 }
@@ -18,11 +98,37 @@ div {
     display: block;
     unicode-bidi: isolate;
 }
+#build-2015{
+    margin-top: 5% ;margin-left: 15% ;margin-bottom: 5%; align-items: center;
+
+}
+ .choose-your{
+    padding:15%;display: block;
+
+}
+.how-we-raw{
+display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        unicode-bidi: isolate;
+        
+}
+#How-We-Work{
+    margin-left: 15%
+}
 html {
     font-family: sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
+}
+.concare_design_process-raw{
+    margin-top: 10%;
+}
+.grid-image-tdata-cod{
+    width: 10vw;
 }
 body {
     margin: 0;
@@ -197,3 +303,96 @@ input[type="checkbox"]{
     }
 
 }
+@media (max-width: 767px) {
+    .tab1{
+        width:100%;
+    }
+    .tab-img1{
+        height:fit-content; width: fit-content;
+
+    }
+    .tab-img2{
+       
+        height: fit-content;
+        width: fit-content
+    }
+    .tab-img3{
+        width: fit-content;
+        height: fit-content;
+    }
+    .tab-img4,.tab-img5{
+        width: fit-content;
+        height: fit-content;
+    }
+    .customer-back-us{
+        background-color: #cfe7eb;height:40vh;width:100vw;
+        margin:0px;
+
+    }
+    #inner-card{
+        background-color: rgba(238, 158, 0, .8);width:20vw;color:white;
+          position: absolute;
+      right:75%;
+      }
+.customer-back-us-cal{
+    margin-left: 0%;
+    margin-bottom: 20%;
+}
+.satisfied{
+    
+    background-color:#6610f2;width:10vw;height: 30vh;color: white;
+    
+   
+}
+.satiesfied-cal{
+    display: inline;
+    position: absolute;
+
+}.card.customer-back-us {
+    position: relative;
+}
+
+.card.satisfied {
+    position: absolute;
+    top:0;
+    right: 0;
+   width: 20vw;
+   
+}
+.choose-your{
+    position:absolute;
+    top:200%;
+}
+.catagory_left_2{
+    background-color: #cfe7eb;height:auto;width: auto;
+    margin-bottom: 5% ;
+}
+.catagory-img2{
+    height: fit-content;height:auto;margin-top: auto;
+}
+.catagory-card2{
+    width:auto;height:auto;background-color: red;position:absolute;right:17%;bottom:20%;
+}
+.catagory-card3{
+    height: auto;width:auto; background-color: #6610f2;color:white;
+}
+.grid-image-tdata{
+   
+    margin-bottom: 5%;
+}
+.grid-image-tdata-cod{
+    width: 28vw;
+}
+#How-We-Work{
+    margin-left: 15%
+}
+.catagory-card3{
+    content-visibility: hidden;
+}
+    }
+    @media only screen and (min-width: 767px) and (max-width: 991px) {
+        .section_title {
+            padding-top: 40px;
+        }
+    }
+   
